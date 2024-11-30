@@ -1,0 +1,87 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jsondata&Sequence_1",
+        "filename&Sequence_1",
+        "finalpath&Sequence_1",
+        "path&Sequence_1",
+        "folder&Sequence_1",
+        "email&Sequence_1",
+        "pass&Sequence_1",
+        "Dd&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "cleaned&Sequence_1",
+        "dosage&Sequence_1",
+        "medicine&Sequence_1",
+        "age&Sequence_1",
+        "phone&Sequence_1",
+        "name&Sequence_1",
+        "extractdata&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "TriggerEventArgs"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "remainder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "remail&Sequence_1",
+        "rdosage&Sequence_1",
+        "rmedicine&Sequence_1",
+        "rphone&Sequence_1",
+        "rname&Sequence_1",
+        "jsonobject&Sequence_1",
+        "jsondata&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "email.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "emaildata&Sequence_1",
+        "bodytext&Sequence_8",
+        "response&Sequence_8",
+        "jsonobject&Sequence_8",
+        "cleaned&Sequence_8",
+        "final&Sequence_8",
+        "result&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "translate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jsonobject&Sequence_1",
+        "jsonresponse&Sequence_1",
+        "fromlang&Sequence_1",
+        "jsondata&Sequence_1",
+        "tolang&Sequence_1",
+        "form&Sequence_1",
+        "statement&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

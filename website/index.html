@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Upload</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background-color: #222; /* Dark grey for the form container */
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input[type="file"] {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background-color: #444;
+      color: #fff;
+    }
+    button {
+      background-color: #007bff; /* Blue button */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Your Prescription</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" name="prescription" accept=".pdf" required />
+      <br />
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('uploadForm');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('http://localhost:5000/upload', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+        alert(result.message);
+      } catch (error) {
+        alert('Error uploading file!');
+      }
+    });
+  </script>
+</body>
+</html>
